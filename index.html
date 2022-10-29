@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUM Save bot</title>
+    <link rel="icon" href="https://static.thenounproject.com/png/736683-200.png" type="image/png">
+    <!--FONTS GOOGLE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            height: 100%;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .h1 {
+            font-family: 'Hind Siliguri';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .title {
+            width: 100%;
+            font-family: 'Hind Siliguri';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            text-align: center;
+            color: #fff;
+            text-shadow: 2px 2px #000;
+            margin-top: 5%;
+        }
+
+        .form {
+            width: 500px;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px auto;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+            font-size: 20px;
+            border-radius: 15px;
+        }
+
+        .btn {
+            align-items: center;
+            background-clip: padding-box;
+            background-color: #fa6400;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+            box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            justify-content: center;
+            line-height: 1.25;
+            margin: 0;
+            min-height: 3rem;
+            padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+            position: relative;
+            text-decoration: none;
+            transition: all 250ms;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: baseline;
+            width: auto;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            background-color: #fb8332;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+        }
+
+        .btn:active {
+            background-color: #c85000;
+            box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+            transform: translateY(0);
+        }
+
+        .block {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .big-error {
+            color: red;
+        }
+
+        @media (max-width: 570px) {
+            .form {
+                width: 80%;
+            }
+            .title {
+                margin-top: 15%;
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">SIGN UP FOR BUM Save Bot</h1>
+    <form class="form">
+        <div class="block">
+            <label for="name" class="h1">First Name</label>
+            <input type="text" id="name">
+            <small class="name-error big-error"></small>
+        </div>
+        <div class="block">
+            <label for="phone" class="h1">Phone number</label>
+            <input type="text" id="phone">
+            <small class="phone-error big-error"></small>
+        </div>
+        <div class="block">
+            <label for="email" class="h1">Email</label>
+            <input type="text" id="email">
+            <small class="email-error big-error"></small>
+        </div>
+
+        <button class="btn">Send</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
